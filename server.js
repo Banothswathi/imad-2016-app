@@ -9,9 +9,18 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/', function (req, res) {
-  res.send('hi dis is my oppo');
+app.get('/one-app', function (req, res) {
+  res.send('hi dis is my oppo1');
 });
+
+app.get('/two-app', function (req, res) {
+  res.send('hi dis is my oppo2');
+});
+
+app.get('/three-app', function (req, res) {
+  res.send('hi dis is my oppo3');
+});
+
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
